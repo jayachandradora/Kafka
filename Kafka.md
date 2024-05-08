@@ -1,11 +1,7 @@
 
 Kafka is a distrbuted message streaming platform that uses publish subscribe mechanism to stream the records(data flow).
 
-+---------+
-|         |
-|         |
-|         |
-+---------+
+
 
 
 ###  Centralized System:
@@ -41,3 +37,8 @@ Kafka is a distrbuted message streaming platform that uses publish subscribe mec
 In summary, while centralized systems offer simplicity and centralized control, distributed systems provide better fault tolerance, scalability, and performance at the cost of increased complexity. In the context of Kafka, choosing between a centralized or distributed setup depends on factors like the scale of data processing, fault tolerance requirements, and anticipated growth.
 
 
++---------+
+|         |
+|         |
+|         |
++---------+
