@@ -135,6 +135,15 @@ Here are the key points about Kafka brokers:
 -	Scalability: Kafka brokers can be horizontally scaled by adding more broker instances to the cluster. As more brokers are added, Kafka can distribute data and processing load across multiple nodes, enabling higher throughput and storage capacity.
 -	Monitoring and Management: Kafka provides tools and APIs for monitoring and managing broker health, performance, and configuration. Administrators can monitor metrics such as disk usage, network throughput, and partition lag to ensure optimal cluster operation.
 
+###	Zookeeper
+
+*	Zookeeper is used to monitor kafka cluster and co-ordinate with each broker.
+*	keeps all the metadate information related to kafka cluster in the form of key value pair.
+metadata includes,
+	*	configuration informations.
+	*	Health status of each broker.
+*	it is used for the controller election within kafka cluster.
+  
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/7be37c8e-0e18-4fb5-8ebf-fb6b3c192070)
 
 
