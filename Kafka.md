@@ -104,9 +104,17 @@ Here are the main points about replicas in Kafka:
 
 In Apache Kafka, a producer is an application or process that publishes messages to one or more topics in a Kafka cluster. Producers are responsible for generating data and sending it to Kafka brokers for storage and distribution to consumers.
 
-producers can write data either on the topic level(all the partitions of that topic) or specific partitions of the topic.
+producers can write data either on the topic level(write all the partitions of that topic in round robin fashion) or specific partitions of the topic.
 
+###	Consumers
 
+In Apache Kafka, a Consumers are applications which read/consume data from the topics within a cluster using consumer APIs.
+
+Consumers can read data either on the topic level(all the partitions of that topic) or specific partitions of the topic.
+
+Consumers are always associated with exactly one consumer group.
+
+A consumer group is a group of related consumers that perform a task.
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/7be37c8e-0e18-4fb5-8ebf-fb6b3c192070)
 
