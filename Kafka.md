@@ -44,7 +44,9 @@ In summary, point-to-point messaging systems are designed for one-to-one communi
 
 ##  Kafka Architecture
 
-![image](https://github.com/jayachandradora/Kafka/assets/115500959/fcb73576-6449-401d-974a-ae5109e9488d)
+
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/778eba44-985a-4655-b540-90feda1d2935)
+
 
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/7be37c8e-0e18-4fb5-8ebf-fb6b3c192070)
