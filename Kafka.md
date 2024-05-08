@@ -16,6 +16,10 @@ Message streaming systems often use distributed architectures and technologies t
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/7be37c8e-0e18-4fb5-8ebf-fb6b3c192070)
 
 
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/355573c2-b2e0-4a72-a589-4d7f2b06058d)
+
+
+
 ###  Centralized System:
 
 - In a centralized system, all the data and processing are managed in one central location or node.
