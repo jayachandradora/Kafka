@@ -3,7 +3,9 @@ Kafka is a distrbuted message streaming platform that uses publish subscribe mec
 
 
 |         |
+-----------
 |         |
+-----------
 |         |
 
 ###  Centralized System:
