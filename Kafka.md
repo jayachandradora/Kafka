@@ -1,8 +1,12 @@
 
 Kafka is a distrbuted message streaming platform that uses publish subscribe mechanism to stream the records(data flow).
 
-graph TD;
-    rectangle[This is a rectangle];
++---------+
+|         |
+|  Rectangle  |
+|         |
++---------+
+
 
 
 ###  Centralized System:
