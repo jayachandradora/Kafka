@@ -22,6 +22,7 @@ In a point-to-point messaging system, also known as queuing, messages are sent f
 *  Producer: A producer is responsible for sending messages to the message queue.
 *  Consumer: A consumer retrieves messages from the message queue and processes them. Once a message is consumed, it is typically removed from the queue.
 P2P messaging systems are often used in scenarios where each message must be processed by a single recipient, such as task distribution, workload balancing, or job scheduling.
+
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/2663a2ff-b566-4051-a814-c88d2ac101e4)
 
 
