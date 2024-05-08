@@ -2,13 +2,10 @@
 Kafka is a distrbuted message streaming platform that uses publish subscribe mechanism to stream the records(data flow).
 
 
-    Start --> Process;
-    Process --> Decision;
-    Decision -- Yes --> Action1;
-    Decision -- No --> Action2;
-    Action1 --> End;
-    Action2 --> End;
-    End --> Start;
+   Start --> Process --> Decision
+Decision --> |Yes| Action1 --> End
+Decision --> |No| Action2 --> End
+End --> Start
 
 ###  Centralized System:
 
