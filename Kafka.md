@@ -22,6 +22,8 @@ In a point-to-point messaging system, also known as queuing, messages are sent f
 *  Producer: A producer is responsible for sending messages to the message queue.
 *  Consumer: A consumer retrieves messages from the message queue and processes them. Once a message is consumed, it is typically removed from the queue.
 P2P messaging systems are often used in scenarios where each message must be processed by a single recipient, such as task distribution, workload balancing, or job scheduling.
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/2663a2ff-b566-4051-a814-c88d2ac101e4)
+
 
 ###  Publish-Subscribe Messaging System (Pub-Sub):
 In a publish-subscribe messaging system, messages are broadcasted from a producer (publisher) to multiple consumers (subscribers) who have subscribed to receive specific types of messages. The messaging system typically involves the following components:
@@ -34,13 +36,19 @@ Pub-sub messaging systems allow for decoupling between publishers and subscriber
 
 Pub-sub messaging systems are commonly used in scenarios such as event-driven architectures, real-time data processing, and message broadcasting.
 
-In summary, point-to-point messaging systems are designed for one-to-one communication, while publish-subscribe messaging systems are designed for one-to-many communication
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/18025bfa-44bf-4eaf-a556-971e32c1c517)
+
+
+In summary, point-to-point messaging systems are designed for one-to-one communication, while publish-subscribe messaging systems are designed for one-to-many communication.
+
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/7be37c8e-0e18-4fb5-8ebf-fb6b3c192070)
 
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/355573c2-b2e0-4a72-a589-4d7f2b06058d)
 
+Note : Topic also type of queue with some extra features.
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/e3ca64b5-80fd-44ce-ba0d-60660d6652f3)
 
 
 ###  Centralized System:
