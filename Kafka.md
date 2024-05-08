@@ -1,12 +1,17 @@
 
 Kafka is a distrbuted message streaming platform that uses publish subscribe mechanism to stream the records(data flow).
 
+Message streaming, also known as event streaming or stream processing, refers to the practice of continuously processing and transmitting data records (messages) in real-time. 
+Message streaming is commonly used in various applications and industries, including:
 
-|         |
------------
-|         |
------------
-|         |
+-  **IoT (Internet of Things)**: Collecting and processing sensor data from IoT devices to monitor and control physical environments.
+-  **Finance**: Analyzing real-time market data for trading, risk management, and fraud detection.
+-  **Social Media**: Processing user interactions and content updates on social media platforms.
+-  **E-commerce**: Analyzing user behavior and transactions to personalize recommendations and detect anomalies.
+-  **Telecommunications**: Processing network data for monitoring, troubleshooting, and optimizing network performance.
+-  **Healthcare**: Analyzing patient data for remote monitoring, disease surveillance, and predictive analytics.
+
+Message streaming systems often use distributed architectures and technologies to handle large volumes of data and ensure scalability, fault tolerance, and low latency. Examples of popular message streaming platforms include Apache Kafka, Amazon Kinesis, Apache Pulsar, and Google Cloud Pub/Sub.
 
 ###  Centralized System:
 
@@ -40,9 +45,3 @@ Kafka is a distrbuted message streaming platform that uses publish subscribe mec
 
 In summary, while centralized systems offer simplicity and centralized control, distributed systems provide better fault tolerance, scalability, and performance at the cost of increased complexity. In the context of Kafka, choosing between a centralized or distributed setup depends on factors like the scale of data processing, fault tolerance requirements, and anticipated growth.
 
-
-+---------+
-|         |
-|         |
-|         |
-+---------+
