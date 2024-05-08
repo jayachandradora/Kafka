@@ -47,7 +47,15 @@ In summary, point-to-point messaging systems are designed for one-to-one communi
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/778eba44-985a-4655-b540-90feda1d2935)
 
+###  Topics:
 
+*  A stream of messages belonging to a particular category is called a topic.
+*  it is a logical feed name to which messages are published.
+*  similar to table in a database.
+*  unique identifier of a topic is its name.
+*  we can create as many topic as we want.
+*  Decoupling: Topics facilitate decoupling between publishers and subscribers. Publishers can publish messages to topics without needing to know the identities or locations of subscribers, and subscribers can receive messages from topics without needing to know the identities or locations of publishers.
+*  Scalability: Topics enable scalability by allowing multiple publishers to send messages to the same topic and multiple subscribers to receive messages from the same topic concurrently.
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/7be37c8e-0e18-4fb5-8ebf-fb6b3c192070)
 
