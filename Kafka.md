@@ -65,7 +65,7 @@ In summary, point-to-point messaging systems are designed for one-to-one communi
 *	Partitions enable Kafka to horizontally scale both storage and throughput by distributing data across multiple brokers
 *	Each message within the partition has a unique id associated known as offset
 
-###	Here are some key characteristics of partitions in Kafka:
+####  Here are some key characteristics of partitions in Kafka:
 
 *	Ordered Sequence: Messages within a partition are strictly ordered by their offset, which is a unique identifier assigned to each message as it is appended to the partition. The offset starts from zero for the first message in the partition and increments monotonically for each subsequent message.
 *	Replication: Partitions can be replicated across multiple brokers for fault tolerance and high availability. Each partition has one leader and zero or more replicas. The leader is responsible for handling all read and write requests for the partition, while replicas serve as backups that can take over as leaders in case of leader failure.
@@ -75,6 +75,13 @@ In summary, point-to-point messaging systems are designed for one-to-one communi
 *	Leader Election: Kafka uses leader election mechanisms to dynamically assign leaders for each partition, ensuring that leadership is evenly distributed across brokers and partitions.
 
 Overall, partitions are a critical component of Kafka's distributed architecture, enabling high throughput, fault tolerance, scalability, and efficient message processing.
+
+Distribution of the partions among brokers happens in round robin fashion
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/32b1093d-bd21-4ce4-93b1-6aaf0f2a8905)
+
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/ba007dd8-1149-476d-9642-acea50f624fb)
+
+
 
 
 
