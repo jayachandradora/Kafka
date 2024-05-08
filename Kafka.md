@@ -85,6 +85,10 @@ Distribution of the partions among brokers happens in round robin fashion
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/aa3cd22b-5a3d-47a6-998d-750ae643faec)
 
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/93a91146-7cbe-4e39-aaab-33255cdb2fe0)
+
+Process of replicating the partition is called replication.
+
 In Apache Kafka, a replica refers to a copy of a partition that is stored on a different broker than the partition's leader replica. Replication is a key feature of Kafka and provides fault tolerance, high availability, and durability of data.
 
 Here are the main points about replicas in Kafka:
