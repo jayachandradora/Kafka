@@ -158,13 +158,17 @@ Apache Kafka offers a rich set of features that make it a popular choice for bui
 8.	**Retention and Compaction**: Kafka allows users to configure retention policies for topics, specifying how long messages should be retained in the log. It also supports log compaction, which retains only the latest value for each key in a topic, making it suitable for maintaining the current state of a dataset.
 9.	**Security**: Kafka provides robust security features, including SSL/TLS encryption for data in transit, authentication and authorization mechanisms for controlling access to topics, and integration with external authentication providers such as LDAP or Kerberos.
 10.	**Monitoring and Management**: Kafka includes tools and APIs for monitoring cluster health, performance, and resource utilization. It also provides administrative interfaces for managing topics, partitions, and configurations.
+
+
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/198e2854-553a-4486-8f8b-3ebc4ab4b79f)
+
   
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/7be37c8e-0e18-4fb5-8ebf-fb6b3c192070)
 
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/355573c2-b2e0-4a72-a589-4d7f2b06058d)
 
-Note : Topic also type of queue with some extra features.
+Note : Topic also type of queue with some extra features.One node cluster and one node Zookeepers
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/e3ca64b5-80fd-44ce-ba0d-60660d6652f3)
 
 
