@@ -1,4 +1,4 @@
-Centralized System:
+###  Centralized System:
 
 - In a centralized system, all the data and processing are managed in one central location or node.
 
@@ -12,7 +12,7 @@ Centralized System:
 - Single Point of Failure: If the central node fails, the entire system could go down.
 - Scalability Issues: Scaling a centralized system can be challenging, especially as the volume of data or the number of users grows.
 
-Distributed System:
+###  Distributed System:
 
 - In a distributed system, data and processing are spread across multiple nodes or locations.
 - In the context of Kafka, a distributed system might involve multiple Kafka clusters spread across different geographical regions.
