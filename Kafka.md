@@ -13,6 +13,9 @@ Message streaming is commonly used in various applications and industries, inclu
 
 Message streaming systems often use distributed architectures and technologies to handle large volumes of data and ensure scalability, fault tolerance, and low latency. Examples of popular message streaming platforms include Apache Kafka, Amazon Kinesis, Apache Pulsar, and Google Cloud Pub/Sub.
 
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/7be37c8e-0e18-4fb5-8ebf-fb6b3c192070)
+
+
 ###  Centralized System:
 
 - In a centralized system, all the data and processing are managed in one central location or node.
