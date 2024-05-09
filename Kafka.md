@@ -214,8 +214,14 @@ In kafka cluster , one of the brokers serves as the controller node
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/0407e90f-c8d5-436c-b462-b25c26ca1fda)
  
 **Current offset**: pointer to the last record that kafka has already sent to a consumer in the most recent poll. kafka cluster store how may messages sent to the consumer. it store the information of consumer group not consumer.EX: the current offset of cg1 is 3.
+
 **committed offset**: Marking an offset as consumed is called committed. consumer send the commit request to kafka and kafka store the commiteed offset i.e how many message or offset processed by consumer.EX. if consumer processed the message a then committed offset will be 0.
+
 **committed offset should not be more then Current offset**
+**autocommit: automatically sent to broker that messages are committed**
+
+### Internals of Consumer Group
+
 
 
 ###	Internals of Topics, Partitions and Replications. 
