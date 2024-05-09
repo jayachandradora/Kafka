@@ -248,18 +248,12 @@ If there are 10 consumer groups and 3 Brokers in kafka cluster and we devide 3,3
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/70d79602-a21f-4a9c-b339-fe380c16a74b)
 
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/19dc9816-50f3-439d-a3e3-b8d5399250ac)
 
 
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/45cc952d-abf8-4494-b87f-1583deb90dd0)
 
-![image](https://github.com/jayachandradora/Kafka/assets/115500959/c1cf1695-23b7-4c19-a5af-ea97a1787b12)
-
-
-![image](https://github.com/jayachandradora/Kafka/assets/115500959/e26c5e07-944b-4ac8-a42f-abeb6e546544)
-
-
-![image](https://github.com/jayachandradora/Kafka/assets/115500959/3459194a-8f24-4226-98aa-d248196de3f7)
-
-FindCoordinator, joinGroup etc are API calls.
+**FindCoordinator, joinGroup etc are API calls.**
 
 ###	Internals of Topics, Partitions and Replications. 
 
