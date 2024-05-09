@@ -160,9 +160,19 @@ Apache Kafka offers a rich set of features that make it a popular choice for bui
 10.	**Monitoring and Management**: Kafka includes tools and APIs for monitoring cluster health, performance, and resource utilization. It also provides administrative interfaces for managing topics, partitions, and configurations.
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/4ac811a4-fedc-461d-bf20-4f0e9c610d5f)
+
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/ad646393-97c2-409c-a883-85d4745433e1)
 
-![image](https://github.com/jayachandradora/Kafka/assets/115500959/dada1084-aa55-4c4f-b8e3-369a53b775c3)
+
+In above Broker 1,2 and 3 are connected to zookeeper and broker id 1 is a controller node. There is only one controller node in any kafka cluster
+
+once producer publish a message it produce in a partition which is in leader node and the follower node(broker) where replica of main partition is there send a fetch request and copy the message. this is how repliucas are in sync(ISR).
+
+###	States of partition and Replica
+
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/aea80336-6315-482a-9fb5-6ffacf54e2fa)
+
+when the partition is in Newpartition state then read and write operation can not be happened because the leader is not yet assigned and client can not know to which broker to be connected to write or read the message. onlinepartition is the working state of the partition. in this state read and write operation can be happened.once broker 1 down then partition 0 moves to offlinepartition state.
 
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/198e2854-553a-4486-8f8b-3ebc4ab4b79f)
