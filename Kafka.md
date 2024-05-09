@@ -217,7 +217,8 @@ In kafka cluster , one of the brokers serves as the controller node
 
 **committed offset**: Marking an offset as consumed is called committed. consumer send the commit request to kafka and kafka store the commiteed offset i.e how many message or offset processed by consumer.EX. if consumer processed the message a then committed offset will be 0.
 
-**committed offset should not be more then Current offset**
+**committed offset should not be more then Current offset.**
+
 **autocommit: automatically sent to broker that messages are committed**
 
 ### Internals of Consumer Group
