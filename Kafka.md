@@ -255,6 +255,9 @@ If there are 10 consumer groups and 3 Brokers in kafka cluster and we devide 3,3
 
 ####	**FindCoordinator, joinGroup etc are API calls.**
 
+![Uploading image.png…]()
+
+
 ###	Internals of Topics, Partitions and Replications. 
 
 
