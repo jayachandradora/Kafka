@@ -225,6 +225,18 @@ In kafka cluster , one of the brokers serves as the controller node
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/ddb38700-30e9-4a6f-9194-a8829e7c684e)
 
+*	Kafka maintain that one partition can not assigned to two consumer in the same consumer group so that duplication will not be happend.
+*	When another one consumer wants to subscribe the topic the kafka store the information in **consumer_offset** topic like, which consumer in the consumer group consume how many messages from which partition,  and assign the partition to that consumer accordingly not like the consumer consumes the messages from 0 or starting.
+*	when new consumer wants to subscribe or join the topic then kafka block the message consumption. and rebalancing/redistribution happenes and assign the partition accordingly.
+
+### Consumer Group Rebalancing
+
+The process of re-distributing partitions within a consumer group is known as Consumer Group Rebalancing.
+Rebalancing of Consumer group happens in below cases.
+1.	A Consumer joining the consumer group.
+2.	A Consumer leaving the consumer group.
+3.	If partitions are added to the topics which these consumers are interested in.
+4.	If a partition goes in offline state.(when broker is down)
 
 ###	Internals of Topics, Partitions and Replications. 
 
