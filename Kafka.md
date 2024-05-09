@@ -166,6 +166,9 @@ Apache Kafka offers a rich set of features that make it a popular choice for bui
 
 In above Broker 1,2 and 3 are connected to zookeeper and broker id 1 is a controller node. There is only one controller node in any kafka cluster
 
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/eefb8207-5197-45b3-b98d-abb143f055da)
+
+
 once producer publish a message it produce in a partition which is in leader node and the follower node(broker) where replica of main partition is there send a fetch request and copy the message. this is how repliucas are in sync(ISR).
 
 ###	States of partition and Replica
