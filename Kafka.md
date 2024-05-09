@@ -195,11 +195,29 @@ In kafka cluster , one of the brokers serves as the controller node
 ###	Internals of Kafka Producer and Offsets in Kafka 
 
 ####	Offsets
+
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/7889e7d3-2e62-4b58-93fb-44d0349aabec)
+
+
 *	The record in the partitions are each assigned a sequential id number called the offset that uniquely identifies each record within the partition.
   Three variations of offsets.
-  1.	Log-end offsets: offset of the last message written to a log/partition.
-  2.	Current offset: pointe to the last record that kafka has already sent to a consumer in the most recent poll.
+  1.	Log-end offsets: offset of the last message written to a log/partition. Or how many messages present in a partition. in above diagram log-end offset of partition p0 is 3
+  2.	Current offset: pointer to the last record that kafka has already sent to a consumer in the most recent poll.
   3.	committed offset: Marking an offset as consumed is called committed.
+
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/73f8ede8-073d-4f90-aa1c-73699386c4db)
+
+*	When the broker store the messages then it store in file system and while store the messages it store the metadata(information about the data/message) of the message
+*	If key is null then the messages sent in round robin fashion between the partitions.
+*	Timestamp will the time when the broker saved the message in filesystem.
+ 
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/0407e90f-c8d5-436c-b462-b25c26ca1fda)
+ 
+**Current offset**: pointer to the last record that kafka has already sent to a consumer in the most recent poll. kafka cluster store how may messages sent to the consumer. it store the information of consumer group not consumer.EX: the current offset of cg1 is 3.
+**committed offset**: Marking an offset as consumed is called committed. consumer send the commit request to kafka and kafka store the commiteed offset i.e how many message or offset processed by consumer.EX. if consumer processed the message a then committed offset will be 0.
+**committed offset should not be more then Current offset**
+
+
 ###	Internals of Topics, Partitions and Replications. 
 
 
