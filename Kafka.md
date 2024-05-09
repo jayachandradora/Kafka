@@ -248,7 +248,9 @@ If there are 10 consumer groups and 3 Brokers in kafka cluster and we devide 3,3
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/c1cf1695-23b7-4c19-a5af-ea97a1787b12)
 
+
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/e26c5e07-944b-4ac8-a42f-abeb6e546544)
+
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/3459194a-8f24-4226-98aa-d248196de3f7)
 
