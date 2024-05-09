@@ -179,12 +179,19 @@ Note : once producer publish a message it produce in a partition which is in lea
 *	onlinepartition is the working state of the partition. in this state read and write operation can be happened.
 *	once broker 1 down then partition 0 moves to offlinepartition state.
 
-####	Kafka controller Noad
+###	Kafka controller Noad
 
 In kafka cluster , one of the brokers serves as the controller node
 *	The controller manages the state of partitions and replicas.
 *	The controller manages the state transition.
 *	It perform administrative tasks like reassigning partitions.
+
+**There is one controller node in a kafka cluster and we can not decrease the partition because of data loss**
+### Partition Reassignment
+1.	move the partition across the brokers.
+2.	selectively move replicas of a partition to a specific set of brokers.
+3.	increase the replication factor.
+
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/198e2854-553a-4486-8f8b-3ebc4ab4b79f)
 
