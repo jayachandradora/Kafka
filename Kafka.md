@@ -159,6 +159,10 @@ Apache Kafka offers a rich set of features that make it a popular choice for bui
 9.	**Security**: Kafka provides robust security features, including SSL/TLS encryption for data in transit, authentication and authorization mechanisms for controlling access to topics, and integration with external authentication providers such as LDAP or Kerberos.
 10.	**Monitoring and Management**: Kafka includes tools and APIs for monitoring cluster health, performance, and resource utilization. It also provides administrative interfaces for managing topics, partitions, and configurations.
 
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/4ac811a4-fedc-461d-bf20-4f0e9c610d5f)
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/ad646393-97c2-409c-a883-85d4745433e1)
+
+
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/198e2854-553a-4486-8f8b-3ebc4ab4b79f)
 
