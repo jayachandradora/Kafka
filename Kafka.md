@@ -169,14 +169,22 @@ In above Broker 1,2 and 3 are connected to zookeeper and broker id 1 is a contro
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/eefb8207-5197-45b3-b98d-abb143f055da)
 
 
-once producer publish a message it produce in a partition which is in leader node and the follower node(broker) where replica of main partition is there send a fetch request and copy the message. this is how repliucas are in sync(ISR).
+Note : once producer publish a message it produce in a partition which is in leader node and the follower node(broker) where replica of main partition is there send a fetch request and copy the message. this is how replicas are in sync(ISR).
 
 ###	States of partition and Replica
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/aea80336-6315-482a-9fb5-6ffacf54e2fa)
 
-when the partition is in Newpartition state then read and write operation can not be happened because the leader is not yet assigned and client can not know to which broker to be connected to write or read the message. onlinepartition is the working state of the partition. in this state read and write operation can be happened.once broker 1 down then partition 0 moves to offlinepartition state.
+*	when the partition is in Newpartition state then read and write operation can not be happened because the leader is not yet assigned and client can not know which broker to be connected to write or read the message.
+*	onlinepartition is the working state of the partition. in this state read and write operation can be happened.
+*	once broker 1 down then partition 0 moves to offlinepartition state.
 
+####	Kafka controller Noad
+
+In kafka cluster , one of the brokers serves as the controller node
+*	The controller manages the state of partitions and replicas.
+*	The controller manages the state transition.
+*	It perform administrative tasks like reassigning partitions.
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/198e2854-553a-4486-8f8b-3ebc4ab4b79f)
 
