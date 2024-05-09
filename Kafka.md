@@ -223,6 +223,7 @@ In kafka cluster , one of the brokers serves as the controller node
 
 ### Internals of Consumer Group
 
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/ddb38700-30e9-4a6f-9194-a8829e7c684e)
 
 
 ###	Internals of Topics, Partitions and Replications. 
