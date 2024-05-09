@@ -192,6 +192,17 @@ In kafka cluster , one of the brokers serves as the controller node
 2.	selectively move replicas of a partition to a specific set of brokers.
 3.	increase the replication factor.
 
+###	Internals of Kafka Producer and Offsets in Kafka 
+
+####	Offsets
+*	The record in the partitions are each assigned a sequential id number called the offset that uniquely identifies each record within the partition.
+  Three variations of offsets.
+  1.	Log-end offsets: offset of the last message written to a log/partition.
+  2.	Current offset: pointe to the last record that kafka has already sent to a consumer in the most recent poll.
+  3.	committed offset: Marking an offset as consumed is called committed.
+###	Internals of Topics, Partitions and Replications. 
+
+
 
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/198e2854-553a-4486-8f8b-3ebc4ab4b79f)
 
