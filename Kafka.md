@@ -246,6 +246,11 @@ For this two entities are involved
 
 If there are 10 consumer groups and 3 Brokers in kafka cluster and we devide 3,3 and 4 consumer groups and assigned to these 3 brokers. then these consumer groups are devided into 3 subset and it is managed by 3 brokers.
 
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/70d79602-a21f-4a9c-b339-fe380c16a74b)
+
+
+
+
 ![image](https://github.com/jayachandradora/Kafka/assets/115500959/c1cf1695-23b7-4c19-a5af-ea97a1787b12)
 
 
