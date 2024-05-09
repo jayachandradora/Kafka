@@ -238,6 +238,22 @@ Rebalancing of Consumer group happens in below cases.
 3.	If partitions are added to the topics which these consumers are interested in.
 4.	If a partition goes in offline state.(when broker is down)
 
+###	How Consumer Group Rebalancing will happens.
+
+For this two entities are involved
+1.	 Group coordinator.
+2.	 Group Leader
+
+If there are 10 consumer groups and 3 Brokers in kafka cluster and we devide 3,3 and 4 consumer groups and assigned to these 3 brokers. then these consumer groups are devided into 3 subset and it is managed by 3 brokers.
+
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/c1cf1695-23b7-4c19-a5af-ea97a1787b12)
+
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/e26c5e07-944b-4ac8-a42f-abeb6e546544)
+
+![image](https://github.com/jayachandradora/Kafka/assets/115500959/3459194a-8f24-4226-98aa-d248196de3f7)
+
+FindCoordinator, joinGroup etc are API calls.
+
 ###	Internals of Topics, Partitions and Replications. 
 
 
