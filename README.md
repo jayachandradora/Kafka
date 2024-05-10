@@ -44,66 +44,66 @@
    They read messages from Kafka partitions and process them as needed.
     
 ## 9. What is the significance of consumer groups in Apache Kafka?
-    Consumer groups allow multiple consumers to work together to consume messages from one or more Kafka topics in parallel. 
-    Each consumer group receives a copy of the data, 
-    and messages are load-balanced among the consumers within the group. This enables scalable and fault-tolerant message consumption.
+   Consumer groups allow multiple consumers to work together to consume messages from one or more Kafka topics in parallel. 
+   Each consumer group receives a copy of the data, 
+   and messages are load-balanced among the consumers within the group. This enables scalable and fault-tolerant message consumption.
 
 ## 10 How does Kafka handle consumer offsets? Explain the concept of offset commit.
-    Kafka tracks the consumption progress of each consumer group using consumer offsets. Consumers commit their current offset to 
-    Kafka after processing a batch of messages. 
-    This offset indicates the position of the last message processed by the consumer. Offset commits are used to manage message delivery semantics, 
-    such as at-least-once or exactly-once processing.
+   Kafka tracks the consumption progress of each consumer group using consumer offsets. Consumers commit their current offset to 
+   Kafka after processing a batch of messages. 
+   This offset indicates the position of the last message processed by the consumer. Offset commits are used to manage message delivery semantics, 
+   such as at-least-once or exactly-once processing.
 
 ## 11. What is the role of Kafka Connect? How does it facilitate integration with external systems?
-    Kafka Connect is a framework for building and running connectors that move data between Apache Kafka and other systems. 
-    It simplifies the integration of Kafka with databases, 
-    message queues, file systems, and other data sources or sinks. Connectors are provided for popular data sources such as JDBC, 
-    Elasticsearch, HDFS, and more.
+   Kafka Connect is a framework for building and running connectors that move data between Apache Kafka and other systems. 
+   It simplifies the integration of Kafka with databases, 
+   message queues, file systems, and other data sources or sinks. Connectors are provided for popular data sources such as JDBC, 
+   Elasticsearch, HDFS, and more.
 
 ## 12. Describe the architecture of Kafka Streams. How does it enable stream processing applications?
-    Kafka Streams is a lightweight stream processing library built on top of Apache Kafka. It allows developers to build real-time applications 
-    that process and analyze continuous streams of data. 
-    Kafka Streams applications are deployed as regular Java applications and can leverage Kafka's fault-tolerance and scalability features.
+   Kafka Streams is a lightweight stream processing library built on top of Apache Kafka. It allows developers to build real-time applications 
+   that process and analyze continuous streams of data. 
+   Kafka Streams applications are deployed as regular Java applications and can leverage Kafka's fault-tolerance and scalability features.
 
 ## 13. What is exactly-once semantics in Apache Kafka? How is it achieved?
-    Exactly-once semantics ensures that each message is processed exactly once, even in the presence of failures and retries. 
-    It requires end-to-end coordination between producers, consumers, 
-    and Kafka brokers. Exactly-once processing is achieved in Kafka using transactional producers, idempotent producers, and transactional consumers.
+   Exactly-once semantics ensures that each message is processed exactly once, even in the presence of failures and retries. 
+   It requires end-to-end coordination between producers, consumers, 
+   and Kafka brokers. Exactly-once processing is achieved in Kafka using transactional producers, idempotent producers, and transactional consumers.
 
 ## 14. What are the key considerations for capacity planning and resource allocation in Kafka clusters?
-    Capacity planning involves estimating the required resources (e.g., CPU, memory, storage, network) based on factors such as message throughput, 
-    retention period, replication factor, 
-    and expected growth. Resource allocation involves provisioning an adequate number of brokers, partitions, and replicas to meet performance, 
-    availability, and scalability requirements.
+   Capacity planning involves estimating the required resources (e.g., CPU, memory, storage, network) based on factors such as message throughput, 
+   retention period, replication factor, 
+   and expected growth. Resource allocation involves provisioning an adequate number of brokers, partitions, and replicas to meet performance, 
+   availability, and scalability requirements.
 
 ## 15. How can you monitor the health and performance of Kafka clusters? Mention some important metrics to track.
-    Kafka clusters can be monitored using built-in metrics exposed by Kafka brokers, producers, and consumers. Important metrics to track include 
-    broker CPU usage, disk usage, 
-    network throughput, partition lag, producer and consumer throughput, and replication lag. Monitoring tools such as Prometheus, Grafana, 
-    and Confluent Control Center can be used to visualize and analyze Kafka metrics.
+   Kafka clusters can be monitored using built-in metrics exposed by Kafka brokers, producers, and consumers. Important metrics to track include 
+   broker CPU usage, disk usage, 
+   network throughput, partition lag, producer and consumer throughput, and replication lag. Monitoring tools such as Prometheus, Grafana, 
+   and Confluent Control Center can be used to visualize and analyze Kafka metrics.
 
 ## 16. Explain the concept of log compaction in Apache Kafka. When is it useful?
-    Log compaction is a feature in Kafka that ensures that only the latest version of each key in a topic is retained. It is useful for maintaining 
-    the latest state of a database or key-value store in Kafka topics.
-    Log compaction allows consumers to rebuild the state of a system from scratch by replaying only the latest updates for each key.
+   Log compaction is a feature in Kafka that ensures that only the latest version of each key in a topic is retained. It is useful for maintaining 
+   the latest state of a database or key-value store in Kafka topics.
+   Log compaction allows consumers to rebuild the state of a system from scratch by replaying only the latest updates for each key.
 
 ## 17. What are the different security features available in Apache Kafka? How can you ensure secure communication within Kafka clusters?
-    Kafka provides various security features such as SSL/TLS encryption, authentication using SASL, and authorization using ACLs (Access Control Lists). 
-    Secure communication within Kafka clusters can be ensured by enabling encryption and authentication mechanisms, configuring SSL certificates, 
-    and setting up ACLs to control access to Kafka resources.
+   Kafka provides various security features such as SSL/TLS encryption, authentication using SASL, and authorization using ACLs (Access Control Lists). 
+   Secure communication within Kafka clusters can be ensured by enabling encryption and authentication mechanisms, configuring SSL certificates, 
+   and setting up ACLs to control access to Kafka resources.
 
 ## 18. Describe the process of Kafka cluster rebalancing. When does it occur, and why is it necessary?
-    Kafka cluster rebalancing occurs when the membership or partition assignment of consumer groups changes. 
-    It is triggered by events such as consumer group startup, shutdown, or scaling. 
-    During rebalancing, Kafka brokers redistribute partitions among consumers to ensure an optimal distribution of workload and maintain consumer group stability.
+   Kafka cluster rebalancing occurs when the membership or partition assignment of consumer groups changes. 
+   It is triggered by events such as consumer group startup, shutdown, or scaling. 
+   During rebalancing, Kafka brokers redistribute partitions among consumers to ensure an optimal distribution of workload and maintain consumer group stability.
 
-##  19. How can you optimize Apache Kafka performance for high throughput and low latency?
-    Performance optimization in Kafka involves tuning various configuration parameters such as batch size, linger time, compression settings, 
-    replication factor, and buffer sizes. 
-    Additionally, optimizing hardware resources, network settings, and Kafka client configurations can improve throughput and reduce latency. 
-    Techniques such as partitioning, batching, and parallelism can also be employed to maximize Kafka performance.
+## 19. How can you optimize Apache Kafka performance for high throughput and low latency?
+   Performance optimization in Kafka involves tuning various configuration parameters such as batch size, linger time, compression settings, 
+   replication factor, and buffer sizes. 
+   Additionally, optimizing hardware resources, network settings, and Kafka client configurations can improve throughput and reduce latency. 
+   Techniques such as partitioning, batching, and parallelism can also be employed to maximize Kafka performance.
 
 ## 20. Describe the process of data replication in Apache Kafka.
-    Data replication in Kafka involves maintaining multiple copies (replicas) of each partition across different brokers. 
-    Each replica consists of a leader and one or more followers. Leaders handle all read and write requests for a partition, 
-    while followers replicate data from the leader to stay in sync.
+   Data replication in Kafka involves maintaining multiple copies (replicas) of each partition across different brokers. 
+   Each replica consists of a leader and one or more followers. Leaders handle all read and write requests for a partition, 
+   while followers replicate data from the leader to stay in sync.
