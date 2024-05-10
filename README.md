@@ -18,30 +18,30 @@
    ActiveMQ are message-oriented middleware that focus on queuing or pub/sub messaging paradigms.
 
 ## 4. How does Apache Kafka ensure fault tolerance and high availability?
-    Kafka achieves fault tolerance and high availability through data replication. Each partition in Kafka has multiple replicas, 
-    distributed across different brokers. Replicas are kept in sync using a leader-follower replication model. If a broker fails, 
-    one of the replicas can be elected as the new leader to continue serving reads and writes.
+   Kafka achieves fault tolerance and high availability through data replication. Each partition in Kafka has multiple replicas, 
+   distributed across different brokers. Replicas are kept in sync using a leader-follower replication model. If a broker fails, 
+   one of the replicas can be elected as the new leader to continue serving reads and writes.
 
 ## 5. What is a topic in Apache Kafka? How does it differ from a queue in traditional messaging systems?
-    A topic in Kafka is a category or feed name to which records are published by producers and from which records are consumed by consumers. 
-    Unlike a queue in traditional messaging systems, Kafka topics can have multiple consumers (consumer groups), 
-    and each consumer group receives a copy of the data.
+   A topic in Kafka is a category or feed name to which records are published by producers and from which records are consumed by consumers. 
+   Unlike a queue in traditional messaging systems, Kafka topics can have multiple consumers (consumer groups), 
+   and each consumer group receives a copy of the data.
     
 ## 6. What is a partition in Apache Kafka? Why are partitions used?
-    A partition is a unit of parallelism and scalability in Kafka. Each topic can be split into multiple partitions, 
-    which are spread across different brokers in the Kafka cluster. Partitions allow Kafka to parallelize message processing 
-    and scale out data storage and throughput.
+   A partition is a unit of parallelism and scalability in Kafka. Each topic can be split into multiple partitions, 
+   which are spread across different brokers in the Kafka cluster. Partitions allow Kafka to parallelize message processing 
+   and scale out data storage and throughput.
     
 ## 7. How does Apache Kafka ensure ordering of messages within a partition?
-    Kafka guarantees strict ordering of messages within a partition by assigning each message a unique offset. 
-    Messages within a partition are stored in the order of their offsets. 
-    Consumers read messages sequentially based on their offsets, ensuring that messages are processed in the order they were produced.
+   Kafka guarantees strict ordering of messages within a partition by assigning each message a unique offset. 
+   Messages within a partition are stored in the order of their offsets. 
+   Consumers read messages sequentially based on their offsets, ensuring that messages are processed in the order they were produced.
     
 ## 8. Explain the role of producers and consumers in Apache Kafka.
-    Producers are applications that publish records to Kafka topics. They send messages to Kafka brokers, 
-    which then append them to the appropriate partitions. 
-    Consumers, on the other hand, subscribe to one or more topics and process the records produced by producers. 
-    They read messages from Kafka partitions and process them as needed.
+   Producers are applications that publish records to Kafka topics. They send messages to Kafka brokers, 
+   which then append them to the appropriate partitions. 
+   Consumers, on the other hand, subscribe to one or more topics and process the records produced by producers. 
+   They read messages from Kafka partitions and process them as needed.
     
 ## 9. What is the significance of consumer groups in Apache Kafka?
     Consumer groups allow multiple consumers to work together to consume messages from one or more Kafka topics in parallel. 
