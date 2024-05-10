@@ -24,11 +24,13 @@
 
 ## 5. What is a topic in Apache Kafka? How does it differ from a queue in traditional messaging systems?
     A topic in Kafka is a category or feed name to which records are published by producers and from which records are consumed by consumers. 
-    Unlike a queue in traditional messaging systems, Kafka topics can have multiple consumers (consumer groups), and each consumer group receives a copy of the data.
+    Unlike a queue in traditional messaging systems, Kafka topics can have multiple consumers (consumer groups), 
+    and each consumer group receives a copy of the data.
     
 ## 6. What is a partition in Apache Kafka? Why are partitions used?
     A partition is a unit of parallelism and scalability in Kafka. Each topic can be split into multiple partitions, 
-    which are spread across different brokers in the Kafka cluster. Partitions allow Kafka to parallelize message processing and scale out data storage and throughput.
+    which are spread across different brokers in the Kafka cluster. Partitions allow Kafka to parallelize message processing 
+    and scale out data storage and throughput.
     
 ## 7. How does Apache Kafka ensure ordering of messages within a partition?
     Kafka guarantees strict ordering of messages within a partition by assigning each message a unique offset. 
@@ -36,7 +38,8 @@
     Consumers read messages sequentially based on their offsets, ensuring that messages are processed in the order they were produced.
     
 ## 8. Explain the role of producers and consumers in Apache Kafka.
-    Producers are applications that publish records to Kafka topics. They send messages to Kafka brokers, which then append them to the appropriate partitions. 
+    Producers are applications that publish records to Kafka topics. They send messages to Kafka brokers, 
+    which then append them to the appropriate partitions. 
     Consumers, on the other hand, subscribe to one or more topics and process the records produced by producers. 
     They read messages from Kafka partitions and process them as needed.
     
@@ -46,13 +49,16 @@
     and messages are load-balanced among the consumers within the group. This enables scalable and fault-tolerant message consumption.
 
 ## 10 How does Kafka handle consumer offsets? Explain the concept of offset commit.
-    Kafka tracks the consumption progress of each consumer group using consumer offsets. Consumers commit their current offset to Kafka after processing a batch of messages. 
+    Kafka tracks the consumption progress of each consumer group using consumer offsets. Consumers commit their current offset to 
+    Kafka after processing a batch of messages. 
     This offset indicates the position of the last message processed by the consumer. Offset commits are used to manage message delivery semantics, 
     such as at-least-once or exactly-once processing.
 
 ## 11. What is the role of Kafka Connect? How does it facilitate integration with external systems?
-    Kafka Connect is a framework for building and running connectors that move data between Apache Kafka and other systems. It simplifies the integration of Kafka with databases, 
-    message queues, file systems, and other data sources or sinks. Connectors are provided for popular data sources such as JDBC, Elasticsearch, HDFS, and more.
+    Kafka Connect is a framework for building and running connectors that move data between Apache Kafka and other systems. 
+    It simplifies the integration of Kafka with databases, 
+    message queues, file systems, and other data sources or sinks. Connectors are provided for popular data sources such as JDBC, 
+    Elasticsearch, HDFS, and more.
 
 ## 12. Describe the architecture of Kafka Streams. How does it enable stream processing applications?
     Kafka Streams is a lightweight stream processing library built on top of Apache Kafka. It allows developers to build real-time applications 
@@ -60,15 +66,19 @@
     Kafka Streams applications are deployed as regular Java applications and can leverage Kafka's fault-tolerance and scalability features.
 
 ## 13. What is exactly-once semantics in Apache Kafka? How is it achieved?
-    Exactly-once semantics ensures that each message is processed exactly once, even in the presence of failures and retries. It requires end-to-end coordination between producers, consumers, 
+    Exactly-once semantics ensures that each message is processed exactly once, even in the presence of failures and retries. 
+    It requires end-to-end coordination between producers, consumers, 
     and Kafka brokers. Exactly-once processing is achieved in Kafka using transactional producers, idempotent producers, and transactional consumers.
 
 ## 14. What are the key considerations for capacity planning and resource allocation in Kafka clusters?
-    Capacity planning involves estimating the required resources (e.g., CPU, memory, storage, network) based on factors such as message throughput, retention period, replication factor, 
-    and expected growth. Resource allocation involves provisioning an adequate number of brokers, partitions, and replicas to meet performance, availability, and scalability requirements.
+    Capacity planning involves estimating the required resources (e.g., CPU, memory, storage, network) based on factors such as message throughput, 
+    retention period, replication factor, 
+    and expected growth. Resource allocation involves provisioning an adequate number of brokers, partitions, and replicas to meet performance, 
+    availability, and scalability requirements.
 
 ## 15. How can you monitor the health and performance of Kafka clusters? Mention some important metrics to track.
-    Kafka clusters can be monitored using built-in metrics exposed by Kafka brokers, producers, and consumers. Important metrics to track include broker CPU usage, disk usage, 
+    Kafka clusters can be monitored using built-in metrics exposed by Kafka brokers, producers, and consumers. Important metrics to track include 
+    broker CPU usage, disk usage, 
     network throughput, partition lag, producer and consumer throughput, and replication lag. Monitoring tools such as Prometheus, Grafana, 
     and Confluent Control Center can be used to visualize and analyze Kafka metrics.
 
@@ -88,9 +98,10 @@
     During rebalancing, Kafka brokers redistribute partitions among consumers to ensure an optimal distribution of workload and maintain consumer group stability.
 
 ##  19. How can you optimize Apache Kafka performance for high throughput and low latency?
-    Performance optimization in Kafka involves tuning various configuration parameters such as batch size, linger time, compression settings, replication factor, and buffer sizes. 
-    Additionally, optimizing hardware resources, network settings, and Kafka client configurations can improve throughput and reduce latency. Techniques such as partitioning, batching, 
-    and parallelism can also be employed to maximize Kafka performance.
+    Performance optimization in Kafka involves tuning various configuration parameters such as batch size, linger time, compression settings, 
+    replication factor, and buffer sizes. 
+    Additionally, optimizing hardware resources, network settings, and Kafka client configurations can improve throughput and reduce latency. 
+    Techniques such as partitioning, batching, and parallelism can also be employed to maximize Kafka performance.
 
 ## 20. Describe the process of data replication in Apache Kafka.
     Data replication in Kafka involves maintaining multiple copies (replicas) of each partition across different brokers. 
